@@ -71,7 +71,7 @@ body {
     }
     .reason-portfolio{
         flex: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 }
 
