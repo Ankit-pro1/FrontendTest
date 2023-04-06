@@ -1,0 +1,223 @@
+body {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 920px;
+    }
+    .m-auto{
+        margin: 0 10px
+    }
+
+    /* navigation bar */
+    .nav-menu-list a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+
+    .nav-logo img {
+        width: 250px
+    }
+
+    .navigation-bar .search-icon i {
+        font-size: 1.25rem;
+    }
+
+    /* Service Section */
+    .map-area .outer-img {
+        text-align: center;
+    }
+
+    .map-area .overlay-country {
+        top: 10%;
+        left: 38%;
+    }
+    .map-area .overlay-trades {
+        top: 42%;
+        right: 27%;
+    }
+    .map-area .overlay-trading-pairs {
+        top: 68%;
+        left: 26%;
+    }
+    .overlay-shiba {
+        top: 30%;
+        left: 32%;
+    }
+    .overlay-ethereum {
+        top: 26%;
+        right: 38%;
+    }
+    .overlay-bitcoin {
+        top: 67%;
+        left: 52%;
+    }
+    .map-area{
+        margin-bottom: 20px;
+    }
+
+    /* Reason Section */
+
+    .inner-reason-portfolio{
+        position: relative;
+        margin-bottom: 10px;
+        padding: 30px 10px;
+    }
+    .reason-content{
+        flex: 100%;
+        /* border: 1px solid green; */
+    }
+    .reason-portfolio{
+        flex: 100%;
+        border: 1px solid red;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /* navigation bar */
+    .navigation-bar {
+        position: relative;
+    }
+
+    .nav-menu-list,
+    .search-icon {
+        display: none;
+
+    }
+
+    .dropdown-list {
+        position: absolute;
+        top: -1000%;
+        right: 2%;
+        background-color: #00092A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 10px;
+        padding: 10px 0;
+        transition: all ease 0.1s;
+    }
+
+    .dropdown-list a,
+    i {
+        color: #ffffff;
+        margin: 5px 0;
+        cursor: pointer;
+    }
+
+    .dropdown-list.active {
+        top: 100%;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    /* Main Section */
+    .data {
+        overflow-x: auto;
+    }
+
+    /* Service Section */
+    .overlay-bitcoin img,  .overlay-ethereum img,  .overlay-shiba img{
+        width: 34px;
+    }
+    .map-area .inner-overlay div{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .map-area .inner-overlay i{
+        margin-right: 8px;
+        font-size: 1.125rem;
+    }
+
+    /* Footer Section */
+    .footer-about, .footer-conditions, .footer-support, .footer-links{
+        padding-left: 0px;
+        flex: 50%;
+    } 
+    .footer-conditions, .footer-links{
+        padding-left: 20px;
+    }
+    .footer-name, .footer-support .footer-name, .footer-links .footer-name{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 596px) {
+    .m-auto {
+        margin: 0 10px;
+    }
+
+    .container {
+        max-width: 530px;
+    }
+
+    /* navigation bar */
+    .dropdown-list {
+        width: 100%;
+        right: 0%;
+    }
+
+    /* main section */
+    .main-section .content p:nth-child(1) {
+        font-size: 1.25rem;
+    }
+
+    .main-section .content p:nth-child(2) {
+        font-size: 1.15rem;
+    }
+
+    .data table {
+        width: max-content;
+    }
+
+    tr td:nth-child(1) img {
+        width: 36px;
+        margin: 10px 10px 10px 0;
+    }
+
+    tr td:nth-child(4) img {
+        width: 44px;
+        margin-right: 24px;
+    }
+
+    /* service section */
+    .map-area, .reason-portfolio .backlay .zigzag-lines {
+        overflow: hidden;
+    }
+    .map-area .outer-img img{
+        width: 440px;
+    }
+    .map-area .inner-overlay div{
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .map-area .inner-overlay i{
+        margin-right: 4px;
+        font-size: 1rem;
+    }
+    
+.service-heading, .reason-heading{
+    font-size: 1.5rem;
+    line-height: 36px;
+}
+/* Reason Section */
+.reason-portfolio .backlay img{
+    width: 330px;
+}
+
+/* Footer Section */
+.footer-about, .footer-conditions, .footer-support, .footer-links{
+    padding-left: 0px;
+    flex: 100%;
+} 
+}

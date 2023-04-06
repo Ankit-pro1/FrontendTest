@@ -1,0 +1,390 @@
+/************** import 'poppin' goggle font *************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/***************** Color Variables *******************/
+:root {
+    --primary: #041334;
+    --secondary: #00092A;
+    --ternary: #091838;
+    --warning: #FBC315;
+    --danger: #FF0000;
+    --success: #14FF00;
+    --heaven: #FFFFFF;
+    --gray: #858585;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/********************** Utility Classes *****************/
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 24px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #3DD8EE 0%, #0997E8 100%);
+    color: var(--heaven);
+    cursor: pointer;
+}
+
+.dropdown-list {
+    display: none;
+}
+.service-heading,.reason-heading {
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 54px;
+}
+
+
+/******************** Navigation Bar *********************/
+.navigation-bar {
+    background-color: var(--ternary);
+    padding: 14px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-list a {
+    color: var(--heaven);
+    margin: 0 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navigation-bar .search-icon i {
+    font-size: 1.5rem;
+    color: var(--heaven);
+    cursor: pointer;
+}
+
+.toggle-btn {
+    font-size: 1.5rem;
+    color: var(--heaven);
+    cursor: pointer;
+    display: none;
+}
+
+/******************* Main Section *****************/
+.main-section {
+    background-color: var(--primary);
+    color: var(--heaven);
+    padding: 40px 0;
+}
+
+.main-section .content {
+    margin-bottom: 36px;
+}
+
+.main-section .content p:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.main-section .content p:nth-child(2) {
+    font-size: 1.25rem;
+}
+
+.data table,
+tr {
+    margin-bottom: 10px;
+}
+
+.data table,
+tr,
+td,
+th {
+    text-align: center;
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1) {
+    text-align: left;
+    font-weight: 500;
+}
+
+tr td:nth-child(1) img {
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.data table {
+    width: 100%;
+}
+
+.data table tr td span {
+    color: var(--gray);
+    margin-left: 12px;
+    font-size: 0.75rem;
+}
+
+/********************* Service Section *******************/
+.service-section {
+    background-color: var(--secondary);
+    color: var(--heaven);
+    padding: 40px 0;
+}
+
+.inner-service-section,.inner-reason-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-service-section .map-area {
+    flex: 60%;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.inner-service-section .text-area {
+    flex: 40%;
+    /* border: 1px solid green; */
+}
+
+.map-area .overlay{
+    display: inline-block;
+    background-color: #0A1B2B;
+    padding: 4px 10px;
+    border-radius: 2px;
+    position: absolute;
+}
+.map-area .overlay-country{
+    top: 7%;
+    left: 25%;
+}
+.map-area .overlay-trades{
+    top: 34%;
+    right: 28%
+}
+.map-area .overlay-trading-pairs{
+    top: 56%;
+    left: 10%;
+}
+.overlay-shiba{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+
+}
+.overlay-ethereum{
+    position: absolute;
+    top: 21%;
+    right: 38%;
+}
+.overlay-bitcoin{
+    position: absolute;
+    top: 54%;
+    left: 44%;
+}
+.map-area .inner-overlay{
+    display: flex;
+    align-items: center;
+}
+.map-area .inner-overlay div{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.map-area .inner-overlay i{
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+.map-area  .overlay:nth-child(1) i{
+    color: #226AF3;
+}
+.map-area  .overlay:nth-child(2) i{
+    color: #6687FA;
+}
+.map-area  .overlay:nth-child(3) i{
+    color: #FF696A;
+;
+}
+
+.inner-service-section .text-area .service-content {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 24px 0;
+}
+.inner-service-section .text-area  .service-point{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.inner-service-section .service-point .icon{
+    background: #0f1535;
+    line-height: 80px;
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.inner-service-section .service-point:nth-child(1) .icon i{
+    color: #FF696A;
+}
+.inner-service-section .service-point:nth-child(2) .icon i{
+    color: #88ECA6;
+}
+.inner-service-section .service-point:nth-child(3) .icon i{
+    color: #6687FA;
+}
+.inner-service-section .service-point .point-heading{
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+/* Reason Section */
+.reason-section {
+    background-color: var(--primary);
+    color: var(--heaven);
+    padding: 40px 0;
+}
+.reason-content{
+    flex: 50%;
+    /* border: 1px solid green; */
+}
+.reason-portfolio{
+    flex: 50%;
+    /* border: 1px solid red; */
+}
+.reason-content .reason-points:nth-child(1) .reason-point{
+    margin-top: 20px;
+}
+.reason-content .reason-point{
+    display: flex;
+}
+.reason-content .reason-point .point-heading{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.reason-content .reason-point{
+    margin-bottom: 20px;
+}
+.reason-content .reason-point div{
+    margin-left: 10px;
+}
+.reason-content .reason-point .icon i{
+    font-size: 24px;
+}
+.reason-portfolio{
+    position: relative;
+}
+.inner-reason-portfolio{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 24px;
+    border-radius: 50px;
+    width: 300px;
+    background: linear-gradient(180.04deg, rgba(4, 19, 52, 0.78) -3.16%, rgba(15, 37, 84, 0.62) 99.42%);
+    border: 2px solid #142346;
+    backdrop-filter: blur(1px);
+    z-index: 10;
+}
+
+.inner-reason-portfolio img{
+    width: 50px;
+    height: 50px;
+}
+.inner-reason-portfolio table tr p{
+    display: inline-block;
+}
+.inner-reason-portfolio table:nth-child(1) tr p{
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.reason-portfolio .backlay img{
+    width: 440px;
+}
+.reason-portfolio .backlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+
+/********************* Footer Section  ******************/
+.footer-section{
+    background-color: var(--secondary);
+    padding: 40px 0;
+    color: var(--heaven)
+}
+.upper-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-about{
+    flex: 40%;
+}
+.footer-conditions .footer-name, .footer-support .footer-name, .footer-links .footer-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.footer-conditions, .footer-support, .footer-links{
+    padding-left: 30px;
+    flex: 20%;
+} 
+.footer-conditions a, .footer-support a, .footer-links a{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.upper-footer .links a{
+    color: var(--heaven);
+}
+.lower-footer{
+    background-color: var(--primary);
+    color: var(--heaven);
+    padding: 10px 0;
+}
+.lower-footer a{
+    color: var(--heaven);
+}
+
+/**********XX********* Footer Section  ********XX********/
