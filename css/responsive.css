@@ -182,6 +182,7 @@ body {
 
     tr td:nth-child(1) img {
         width: 36px;
+        height: auto;
         margin: 10px 10px 10px 0;
     }
 
